@@ -1,1 +1,1 @@
-# https://www.bengabo.com
+https://www.bengabo.com/
