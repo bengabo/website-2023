@@ -257,122 +257,6 @@ ol {
   }
 }
 
-/* Accordion */
-
-.accordion-area .panel {
-  margin-bottom: 18px;
-}
-
-.accordion-area .panel-header {
-  display: block;
-  font-weight: 500;
-  position: relative;
-  border: 2px solid #212121;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-
-.accordion-area .panel-header.active .panel-link {
-  color: #fff;
-  background-color: #323232;
-}
-
-.accordion-area .panel-header.active .panel-link.collapsed {
-  color: #323232;
-  background-color: transparent;
-}
-
-.accordion-area .panel-link:after {
-  content: "+";
-  position: absolute;
-  font-size: 18px;
-  font-weight: 500;
-  right: 25px;
-  top: 50%;
-  color: #000;
-  line-height: 16px;
-  margin-top: -8px;
-  margin-left: -4px;
-}
-
-.accordion-area .panel-header.active .panel-link:after {
-  content: "-";
-  margin-top: -10px;
-  color: #fff;
-}
-
-.accordion-area .panel-header.active .panel-link.collapsed:after {
-  content: "+";
-  color: #323232;
-}
-
-.accordion-area .panel-link {
-  text-align: left;
-  background-color: transparent;
-  border: none;
-  position: relative;
-  width: 100%;
-  padding: 23px 40px;
-  padding-left: 30px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #212121;
-  font-weight: 500;
-  line-height: 1.3;
-  cursor: pointer;
-}
-
-.accordion-area .panel-body p {
-  margin-bottom: 0;
-  padding-top: 20px;
-}
-
-.accordion-area .panel-body {
-  padding: 0 5px;
-}
-
-/* Tab */
-
-.tab-element .nav-tabs {
-  border-bottom: none;
-  margin-bottom: 25px;
-}
-
-.tab-element .nav-item {
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
-.tab-element .nav-tabs .nav-link {
-  border: 2px solid #212121;
-  text-align: left;
-  background-color: transparent;
-  border-radius: 0;
-  position: relative;
-  width: 100%;
-  padding: 23px 38px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #323232;
-  font-weight: 500;
-  line-height: 1.3;
-  cursor: pointer;
-}
-
-.tab-element .nav-tabs .nav-item:last-child {
-  margin-right: 0;
-}
-
-.tab-element .nav-tabs .nav-link.active {
-  background: #212121;
-  color: #fff;
-}
-
-.tab-element .tab-pane p {
-  margin-bottom: 0;
-  line-height: 1.9;
-}
-
 /* Circle progress */
 
 .circle-progress {
@@ -402,22 +286,6 @@ ol {
 .circle-progress .progress-info p {
   margin-bottom: 0;
   line-height: normal;
-}
-
-/* milestones */
-
-.milestone {
-  margin-bottom: 30px;
-}
-
-.milestone h2 {
-  font-size: 60px;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.milestone p {
-  margin-bottom: 0;
 }
 
 .search-model {
@@ -610,78 +478,6 @@ a {
   border: none;
   color: #fff;
   padding: 15px;
-}
-
-/*------------------
-  Hero section
----------------------*/
-
-.hero-section {
-  clear: both;
-  position: relative;
-}
-
-.hero-item {
-  height: 278px;
-  position: relative;
-}
-
-.hero-item:hover .hero-link {
-  opacity: 1;
-}
-
-.hero-item:hover .hero-link h2 {
-  top: 0;
-}
-
-.hero-link {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #060606;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0 30px;
-  overflow: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.hero-link h2 {
-  color: #fff;
-  line-height: 1.5;
-  position: relative;
-  top: 50px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.hero-social-links {
-  position: absolute;
-  width: 110px;
-  bottom: 0;
-  right: 0;
-  z-index: 9;
-  background: #fff;
-  text-align: center;
-  padding: 40px 0;
-}
-
-.hero-social-links a {
-  display: block;
-  padding: 16px 0;
-  font-size: 16px;
-  color: #121212;
 }
 
 /* ----------------
@@ -1094,21 +890,6 @@ a {
   .grid-item,
   .grid-width-2 {
     width: 100%;
-  }
-  .hero-social-links {
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    right: 0;
-    z-index: 9;
-    background: #fff;
-    text-align: center;
-    padding: 30px 0;
-    border-bottom: 1px solid #e8e8e8;
-  }
-  .hero-social-links a {
-    display: inline-block;
-    padding: 5px 10px;
   }
   .map {
     height: 400px;
