@@ -859,12 +859,14 @@ a {
   box-shadow: rgba(30, 30, 30, 0.3) 5px 5px 10px 1.5px;
   border-radius: 0.5rem;
   transition: 0.25s;
+  background-size: cover;
 }
 
 .portfolio-item:hover {
   transition: 0.3s;
   box-shadow: rgba(30, 30, 30, 0.2) 5px 5px 12px 2px;
   transform: scale(1.05);
+  background-size: cover;
 }
 
 .portfolio-item.next-btn {
