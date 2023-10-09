@@ -416,7 +416,7 @@ a {
 .main-menu {
   list-style: none;
   float: right;
-  display: none;
+  display: block;
 }
 
 .main-menu li {
@@ -663,25 +663,6 @@ a {
   box-shadow: rgba(30, 30, 30, 0.2) 5px 5px 12px 2px;
   transform: scale(1.05);
   background-size: cover;
-}
-
-.portfolio-item.next-btn {
-  background: #060606;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.portfolio-item.next-btn h2 {
-  color: #fff;
-  font-size: 41px;
 }
 
 /* ----------------
