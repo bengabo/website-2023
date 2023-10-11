@@ -6,6 +6,12 @@ body {
   /* font-smoothing: antialiased; */
 }
 
+canvas {
+  /* position: relative; */
+  /* top: 0;
+  left: 0; */
+}
+
 h1,
 h2,
 h3,
@@ -258,7 +264,7 @@ ol {
 }
 
 /* Circle progress */
-
+/* 
 .circle-progress {
   text-align: center;
   display: block;
@@ -286,7 +292,7 @@ ol {
 .circle-progress .progress-info p {
   margin-bottom: 0;
   line-height: normal;
-}
+} */
 
 .search-model {
   display: none;
@@ -516,50 +522,15 @@ a {
   color: #ffe72d;
 }
 
-.skill-warp {
-  padding-left: 83px;
-  padding-top: 80px;
-}
-
-.single-progress-item {
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.single-progress-item:last-child {
-  margin-bottom: 0;
-}
-
-.single-progress-item p {
-  padding-top: 28px;
-}
-
-.progress-bar-style {
-  display: block;
-  height: 6px;
-  position: relative;
-  width: 100%;
-}
-
-.progress-bar-style .bar-inner {
+#threejs-container {
   position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #212121;
-}
-
-.progress-bar-style .bar-inner span {
-  position: absolute;
-  width: 54px;
-  height: 40px;
-  right: 0;
-  top: 22px;
-  padding-top: 8px;
-  color: #fff;
-  font-weight: 400;
-  text-align: center;
-  background: #212121;
+  width: auto;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  z-index: -1;
+  /* justify-content: right; */
+  /* margin-right: 5px; */
 }
 
 /*------------------

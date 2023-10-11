@@ -20,9 +20,12 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/magnific-popup.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </head>
 
 <body>
+
 	<div class="parallax-container">
 		<div class="parallax-background"></div>
 	<!-- Page Preloder -->
@@ -67,26 +70,12 @@
 							</a>
 						</div>
 					</div>
-					<!-- <div class="col-xl-6 col-lg-5 p-0">
-						<div class="skill-warp">
-							<div class="single-progress-item">
-								<div class="progress-bar-style" data-progress="75"></div>
-								<p>Nature</p>
-							</div>
-							<div class="single-progress-item">
-								<div class="progress-bar-style" data-progress="100"></div>
-								<p>Passion</p>
-							</div>
-							<div class="single-progress-item">
-								<div class="progress-bar-style" data-progress="90"></div>
-								<p>Portraits</p>
-							</div>
-						</div>
-					</div> -->
 				</div>
 			</div>
+			<div id='threejs-container'></div>
 		</div>
 	</section>
+
 	<!-- Intro section end  -->
 
 	<!-- Portfolio section  -->
@@ -291,8 +280,10 @@
 		</div>
 	</footer>
 	<!-- Footer section end  -->
-
-	<!--====== Javascripts & Jquery ======-->
+	
+	<!-- Scripts -->
+	<canvas  class="webgl" id="bg"></canvas>
+	<script src="./js/geo3d.js"></script>
 	<script src="./js/jquery-3.2.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/jquery.slicknav.min.js"></script>
