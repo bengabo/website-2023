@@ -12,17 +12,32 @@ let camera = new THREE.PerspectiveCamera(
 );
 camera.position.z = 6;
 
+/**
+ * Geometry
+ */
 // Sphere
-let sphere = new THREE.Mesh(
-  new THREE.IcosahedronGeometry(1.1, 4),
-  new THREE.MeshBasicMaterial({
-    color: 0xffe72d,
-    wireframe: true,
-  })
+const meshBasicMat = new THREE.MeshBasicMaterial({
+  color: 0xffe72d,
+  wireframe: true,
+});
+
+const meshPhysicalMat = new THREE.MeshPhysicalMaterial({
+  roughness: 0,
+  transmission: 1,
+  thickness: 0.5,
+});
+const sphere01 = new THREE.Mesh(
+  new THREE.IcosahedronGeometry(1, 4),
+  meshBasicMat
 );
-sphere.position.x = 0.45;
-sphere.position.y = 0.45;
-scene.add(sphere);
+const cone = new THREE.Mesh(new THREE.TetrahedronGeometry(0.15, 0), meshBasicMat);
+cone.position.x = 1.255;
+
+const geoGroup = new THREE.Group();
+geoGroup.position.x = 1;
+geoGroup.position.y = 0.4;
+geoGroup.add(sphere01, cone);
+scene.add(geoGroup);
 
 /**
  * Renderer
@@ -66,8 +81,10 @@ console.log(
 // Animation loop
 function tick() {
   requestAnimationFrame(tick);
-  sphere.rotation.x += 0.001;
-  sphere.rotation.y += 0.001;
+  geoGroup.rotation.x += 0.001;
+  geoGroup.rotation.y += 0.001;
+  cone.rotation.x += 0.01;
+  cone.rotation.y += 0.01;
   renderer.render(scene, camera);
 }
 
