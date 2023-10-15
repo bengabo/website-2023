@@ -7,9 +7,9 @@ body {
 }
 
 canvas {
-  /* position: relative; */
-  /* top: 0;
-  left: 0; */
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h1,
@@ -498,6 +498,8 @@ a {
   max-width: 1800px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-flow: column;
 }
 
 .intro-text h2 {
@@ -510,7 +512,7 @@ a {
 }
 
 .sp-link {
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 500;
   font-size: 16px;
   color: #212121;
@@ -525,12 +527,10 @@ a {
 #threejs-container {
   position: absolute;
   width: auto;
-  height: 500px;
-  display: flex;
-  align-items: flex-end;
+  height: auto;
+  /* align-items: center; */
+  /* justify-content: center; */
   z-index: -1;
-  /* justify-content: right; */
-  /* margin-right: 5px; */
 }
 
 /*------------------
