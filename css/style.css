@@ -8,8 +8,8 @@ body {
 
 canvas {
   position: absolute;
-  /* top: 0;
-  left: 0; */
+  top: 0;
+  left: 0;
 }
 
 h1,
@@ -527,9 +527,9 @@ a {
 #threejs-container {
   position: absolute;
   width: auto;
-  height: 500px;
+  height: auto;
   /* align-items: center; */
-  justify-content: center;
+  /* justify-content: center; */
   z-index: -1;
 }
 
